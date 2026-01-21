@@ -1,8 +1,8 @@
 cask "monitome" do
-  version "1.0.1"
-  sha256 "938fe6a3faf114f335b24a321be5137b22e775deed2f305974dcddc70ffc12b1"
+  version "1.1.0"
+  sha256 "70c6c2034515bf26b8e43fb6edca59f107515179afd9a0fdb97f5e5a511aadff"
 
-  url "https://github.com/swairshah/Monitome/releases/download/v#{version}/Monitome-#{version}.zip"
+  url "https://github.com/swairshah/Monitome/releases/download/v#{version}/Monitome.dmg"
   name "Monitome"
   desc "Periodic screenshot capture and analysis for macOS"
   homepage "https://github.com/swairshah/Monitome"
