@@ -14,6 +14,8 @@ cask "monitome" do
   postflight do
     # Ensure the activity-agent binary is executable
     set_permissions "#{appdir}/Monitome.app/Contents/MacOS/activity-agent", "755"
+    # Remove quarantine attribute to avoid "damaged" warning
+    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/Monitome.app"]
   end
 
   zap trash: [
