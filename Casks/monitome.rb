@@ -1,6 +1,6 @@
 cask "monitome" do
-  version "0.1.0"
-  sha256 "f9f3c27583cd3810b2b50faafb42855b2567c6db7e66a0ba6aa8ec0f7573d1ce"
+  version "0.1.1"
+  sha256 "effc2a3b7ad81e61387164850dbf5b714c2c92814aa630e0e5fc09c9e1c11749"
 
   url "https://github.com/swairshah/Monitome/releases/download/v#{version}/Monitome-#{version}.dmg"
   name "Monitome"
@@ -10,13 +10,6 @@ cask "monitome" do
   depends_on macos: ">= :ventura"
 
   app "Monitome.app"
-
-  postflight do
-    # Ensure the activity-agent binary is executable
-    set_permissions "#{appdir}/Monitome.app/Contents/MacOS/activity-agent", "755"
-    # Remove quarantine attribute to avoid "damaged" warning
-    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/Monitome.app"], sudo: false
-  end
 
   zap trash: [
     "~/Library/Application Support/Monitome",
