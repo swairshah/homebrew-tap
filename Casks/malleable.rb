@@ -1,13 +1,13 @@
 cask "malleable" do
-  version "1.0.0"
+  version "1.0.1"
 
   on_arm do
-    sha256 "2455c3f6ad558da9d3125bbf318f81617de5aa82624b181a71fb7deb7d4935b8"
+    sha256 "e0eb7bd5562ec3c90f45f2bd76d925566689e5e4e16ba11e6c3f9d700cf832a6"
     url "https://github.com/swairshah/malleable/releases/download/v#{version}/Malleable-#{version}-arm64.dmg"
   end
 
   on_intel do
-    sha256 "25aa71f5278d8fca9d121362c51b1849b06347344be747060bceae146f361712"
+    sha256 "ea7974a43afd6d2563229f41899ebc6a300f5a6ee437d9a894f37971a1d87df2"
     url "https://github.com/swairshah/malleable/releases/download/v#{version}/Malleable-#{version}.dmg"
   end
 
