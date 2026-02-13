@@ -1,6 +1,6 @@
 cask "bezel" do
-  version "0.1.0"
-  sha256 "002561b3e1128f9a9fa94ff57e0c9b0c0999b051ca738fa7536fe3726812157e"
+  version "0.1.1"
+  sha256 "e563dd0044b9730bc7a65bc54a3c3a5f94273bac2f031a4d3c2a666811a8f2a7"
 
   url "https://github.com/swairshah/Bezel/releases/download/v#{version}/Bezel-#{version}.zip"
   name "Bezel"
