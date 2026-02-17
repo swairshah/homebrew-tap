@@ -1,6 +1,6 @@
 cask "loqui" do
-  version "1.0.4"
-  sha256 "bdaee58e9fe42dc63b774d508330618515303bc96b8849423ebf484802255547"
+  version "1.0.5"
+  sha256 "273e489dc82ba8b22220ade7272bac48dbe6bca2ab9d8803b24914a05feacb0e"
 
   url "https://github.com/swairshah/Loqui/releases/download/v#{version}/Loqui-#{version}.zip"
   name "Loqui"
