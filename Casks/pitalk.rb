@@ -1,6 +1,6 @@
 cask "pitalk" do
-  version "1.1.1"
-  sha256 "106877b5154ede730812156e98ae227d7137ec83eb87156fc97dfb136b908abe"
+  version "1.1.2"
+  sha256 "78018e566c188cc2a2fd137b103b3e8154c20ef25a82e84c0815ecc21172a635"
 
   url "https://github.com/swairshah/PiTalk/releases/download/v#{version}/PiTalk-#{version}.dmg"
   name "PiTalk"
