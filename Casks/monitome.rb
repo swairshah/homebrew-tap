@@ -1,6 +1,6 @@
 cask "monitome" do
-  version "0.2.5"
-  sha256 "b7c77982535c53945ee65d804508a07d865814c858c9a6102add0ba0935656c2"
+  version "0.2.6"
+  sha256 "5abc3ebe14b723f56a0916131151151d23f4546f3f5dff9893b1b1e91d217494"
 
   url "https://github.com/swairshah/Monitome/releases/download/v#{version}/Monitome-#{version}.dmg"
   name "Monitome"
