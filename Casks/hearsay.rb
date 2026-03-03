@@ -1,6 +1,6 @@
 cask "hearsay" do
-  version "1.0.11"
-  sha256 "25a401ccfc676987564ad53cfea99a1970cc8761bbd0bd6d1dcce17339f336b7"
+  version "1.0.12"
+  sha256 "88ecb5c65746177b076e78411e8b3e51b8bf8151a5ba13d9cda1d80ef958b3be"
 
   url "https://github.com/swairshah/hearsay/releases/download/v#{version}/Hearsay-#{version}.dmg"
   name "Hearsay"
