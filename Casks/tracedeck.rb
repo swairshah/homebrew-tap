@@ -1,6 +1,6 @@
 cask "tracedeck" do
-  version "1.0.1"
-  sha256 "a120a31f58970b804ac95783ac7a360dfed3de2d55849c801886b4a7aae36ee0"
+  version "1.0.2"
+  sha256 "5d3171b9ae4803e156b37ac3056d518c2679ddede690e682b83086e554923b97"
 
   url "https://github.com/swairshah/TraceDeck/releases/download/v#{version}/TraceDeck-#{version}.dmg"
   name "TraceDeck"
