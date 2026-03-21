@@ -10,7 +10,26 @@ brew tap swairshah/tap
 
 ## Casks
 
+### Hearsay
+[![Downloads](https://img.shields.io/github/downloads/swairshah/hearsay/total?label=downloads&color=blue)](https://github.com/swairshah/hearsay/releases)
+
+Local speech-to-text transcription using Qwen3-ASR.
+
+```bash
+brew install --cask hearsay
+```
+
+### PiTalk
+[![Downloads](https://img.shields.io/github/downloads/swairshah/PiTalk/total?label=downloads&color=blue)](https://github.com/swairshah/PiTalk/releases)
+
+Voice interface for pi coding agent with TTS feedback.
+
+```bash
+brew install --cask pitalk
+```
+
 ### Loqui
+[![Downloads](https://img.shields.io/github/downloads/swairshah/Loqui/total?label=downloads&color=blue)](https://github.com/swairshah/Loqui/releases)
 
 Local text-to-speech server for macOS.
 
@@ -38,7 +57,42 @@ echo "Hello" | ptts
 ptts --list-voices
 ```
 
-#### Requirements
+### Monitome
+[![Downloads](https://img.shields.io/github/downloads/swairshah/Monitome/total?label=downloads&color=blue)](https://github.com/swairshah/Monitome/releases)
 
-- macOS 13.0+
-- ffmpeg (installed automatically as dependency)
+Screenshot activity tracker with AI-powered indexing and search.
+
+```bash
+brew install --cask monitome
+```
+
+### Bezel
+[![Downloads](https://img.shields.io/github/downloads/swairshah/Bezel/total?label=downloads&color=blue)](https://github.com/swairshah/Bezel/releases)
+
+Experimental notch app for Mac inspired by Alcove and Oak.
+
+```bash
+brew install --cask bezel
+```
+
+### TraceDeck
+[![Downloads](https://img.shields.io/github/downloads/swairshah/TraceDeck/total?label=downloads&color=blue)](https://github.com/swairshah/TraceDeck/releases)
+
+Personal context capture for macOS with local AI indexing and search.
+
+```bash
+brew install --cask tracedeck
+```
+
+### Malleable
+[![Downloads](https://img.shields.io/github/downloads/swairshah/malleable/total?label=downloads&color=blue)](https://github.com/swairshah/malleable/releases)
+
+A canvas for AI-generated UI.
+
+```bash
+brew install --cask malleable
+```
+
+## Requirements
+
+- macOS 13.0+ (Ventura or later)
