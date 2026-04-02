@@ -8,6 +8,29 @@ Custom Homebrew formulas and casks.
 brew tap swairshah/tap
 ```
 
+## Formulas
+
+### Agent (contextagent)
+
+Context-aware coding agent with local observability dashboard.
+
+```bash
+brew install agent
+```
+
+Requires access to the [contextagent](https://github.com/swairshah/contextagent) repo (private).
+
+```bash
+# Get project context (cached, auto-updates)
+agent --context -C /path/to/project
+
+# One-shot prompt
+agent -p "Summarize this project" -m anthropic/claude-haiku-4-5
+
+# Launch dashboard
+agent -d
+```
+
 ## Casks
 
 ### Hearsay
