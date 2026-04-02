@@ -1,21 +1,17 @@
 class Agent < Formula
   desc "Context-aware coding agent with local observability dashboard"
   homepage "https://github.com/swairshah/contextagent"
-  url "git@github.com:swairshah/contextagent.git",
-      tag:      "v0.1.0",
-      revision: "fa6565082ac9ed162b7b74f60c046dab8f61bdd2"
+  version "0.1.0"
   license "MIT"
 
-  depends_on xcode: ["15.0", :build]
+  url "https://github.com/swairshah/contextagent/releases/download/v0.1.0/agent-0.1.0-macos-universal.tar.gz",
+      headers: ["Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"]
+  sha256 "44d09f545ef53b679902f54ffa612ba0e63d08bf05721659ced951da7dc88f5a"
+
   depends_on macos: :ventura
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox",
-           "--arch", "arm64", "--arch", "x86_64"
-
-    bin.install ".build/apple/Products/Release/agent"
-
-    # Install prompts alongside the binary
+    bin.install "agent"
     (share/"contextagent/prompts").install Dir["prompts/*.md"]
   end
 
@@ -34,6 +30,10 @@ class Agent < Formula
 
       Prompts installed to:
         #{share}/contextagent/prompts/
+
+      Note: this is a private repo formula.
+      Set HOMEBREW_GITHUB_API_TOKEN to install:
+        export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
     EOS
   end
 
