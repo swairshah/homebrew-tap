@@ -1,7 +1,7 @@
 class Agent < Formula
   desc "Context-aware coding agent with local observability dashboard"
   homepage "https://github.com/swairshah/contextagent"
-  url "https://github.com/swairshah/contextagent.git",
+  url "git@github.com:swairshah/contextagent.git",
       tag:      "v0.1.0",
       revision: "fa6565082ac9ed162b7b74f60c046dab8f61bdd2"
   license "MIT"
