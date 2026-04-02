@@ -3,7 +3,7 @@ class Agent < Formula
   homepage "https://github.com/swairshah/contextagent"
   url "https://github.com/swairshah/contextagent.git",
       tag:      "v0.1.0",
-      revision: ""
+      revision: "fa6565082ac9ed162b7b74f60c046dab8f61bdd2"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
