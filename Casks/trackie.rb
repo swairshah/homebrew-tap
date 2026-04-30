@@ -1,6 +1,6 @@
 cask "trackie" do
-  version "0.3.1"
-  sha256 "4f1a003f389a0adb6a6319516567049bbc2885270f98c41f9b10cd948d752d32"
+  version "0.3.2"
+  sha256 "b4057b75861f7a27441086f731ca3a06a74aa00302ef0bc69cfbf68ac0826b10"
 
   url "https://github.com/swairshah/Trackie/releases/download/v#{version}/Trackie-#{version}.dmg"
   name "Trackie"
