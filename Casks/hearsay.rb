@@ -1,13 +1,13 @@
 cask "hearsay" do
-  version "1.0.19"
-  sha256 "b0f6ec07bf30e881e92479179119b5f2da5d933c766854d6c8e0056a60b6c18a"
+  version "1.0.20"
+  sha256 "418679b3d79fa7b29a187f1be8a6090c9417af9a3fa22baf92d5c5cd39b62fca"
 
   url "https://github.com/swairshah/hearsay/releases/download/v#{version}/Hearsay-#{version}.dmg"
   name "Hearsay"
-  desc "Local speech-to-text transcription using Qwen3-ASR"
+  desc "Local speech-to-text transcription using on-device speech models"
   homepage "https://github.com/swairshah/hearsay"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sonoma"
 
   app "Hearsay.app"
 
