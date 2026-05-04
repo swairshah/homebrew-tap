@@ -10,7 +10,6 @@ cask "loqui" do
   depends_on formula: "ffmpeg"
 
   app "Loqui.app"
-  binary "#{appdir}/Loqui.app/Contents/MacOS/ptts"
 
   postflight do
     # Start the app after installation
