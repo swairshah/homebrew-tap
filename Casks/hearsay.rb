@@ -7,7 +7,7 @@ cask "hearsay" do
   desc "Local speech-to-text transcription using on-device speech models"
   homepage "https://github.com/swairshah/hearsay"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: ">= :ventura"
 
   app "Hearsay.app"
   binary "#{appdir}/Hearsay.app/Contents/Resources/hearsay", target: "hearsay"
