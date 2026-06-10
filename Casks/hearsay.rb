@@ -1,6 +1,6 @@
 cask "hearsay" do
-  version "1.0.21"
-  sha256 "67934494b18f3a9063e16868861b32c0f04208e0197a837631e5e7e0f109b5da"
+  version "1.0.22"
+  sha256 "ee9fb573e08c6242f581d904a0bc779f9ab8b43b2fb8874155eac0577c0847d7"
 
   url "https://github.com/swairshah/hearsay/releases/download/v#{version}/Hearsay-#{version}.dmg"
   name "Hearsay"
@@ -10,6 +10,7 @@ cask "hearsay" do
   depends_on macos: ">= :sonoma"
 
   app "Hearsay.app"
+  binary "#{appdir}/Hearsay.app/Contents/Resources/hearsay", target: "hearsay"
 
   postflight do
     system_command "/usr/bin/open", args: [staged_path.join("Hearsay.app")]
