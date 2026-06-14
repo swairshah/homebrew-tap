@@ -12,10 +12,6 @@ cask "bookmarked" do
   app "Bookmarked.app"
   binary "#{appdir}/Bookmarked.app/Contents/MacOS/bookmarkedctl", target: "bookmarked"
 
-  postflight do
-    system_command "/usr/bin/open", args: [staged_path.join("Bookmarked.app")]
-  end
-
   zap trash: [
     "~/Library/Application Support/Bookmarked",
     "~/Library/Preferences/com.swair.bookmarked.plist",
