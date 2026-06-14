@@ -1,6 +1,6 @@
 cask "bookmarked" do
-  version "0.1.1"
-  sha256 "4de922337af78a253b2e079c32e5367268f17aee79d90567218ab8bdbc542d0a"
+  version "0.1.2"
+  sha256 "f7c41c92a19d575d1a63b9935c94c513c6bc35c0d1eaecf5fdf898224570fb9e"
 
   url "https://github.com/swairshah/Bookmarked/releases/download/v#{version}/Bookmarked-#{version}.dmg"
   name "Bookmarked"
