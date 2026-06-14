@@ -12,6 +12,11 @@ cask "bookmarked" do
   app "Bookmarked.app"
   binary "#{appdir}/Bookmarked.app/Contents/MacOS/bookmarkedctl", target: "bookmarked"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", appdir.join("Bookmarked.app")]
+  end
+
   zap trash: [
     "~/Library/Application Support/Bookmarked",
     "~/Library/Preferences/com.swair.bookmarked.plist",
