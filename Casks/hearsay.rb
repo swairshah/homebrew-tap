@@ -13,18 +13,24 @@ cask "hearsay" do
   binary "#{appdir}/Hearsay.app/Contents/Resources/hearsay", target: "hearsay"
 
   postflight do
+    cli = "#{appdir}/Hearsay.app/Contents/Resources/hearsay"
+    target = HOMEBREW_PREFIX/"bin/hearsay"
+
+    target.delete if target.symlink? && target.readlink.to_s != cli
+    system_command "/bin/ln", args: ["-s", cli, target] unless target.exist?
+
     system_command "/usr/bin/open", args: [staged_path.join("Hearsay.app")]
   end
 
   zap trash: [
     "~/Library/Application Support/Hearsay",
-    "~/Library/Preferences/com.swair.hearsay.plist",
     "~/Library/Caches/com.swair.hearsay",
+    "~/Library/Preferences/com.swair.hearsay.plist",
   ]
 
   caveats <<~EOS
     Hearsay requires Microphone and Accessibility permissions.
-    
+
     On first launch, you'll be prompted to download a speech recognition model.
     Models are stored in ~/Library/Application Support/Hearsay/Models/
 
