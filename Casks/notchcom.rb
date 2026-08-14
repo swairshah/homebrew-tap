@@ -1,6 +1,6 @@
 cask "notchcom" do
-  version "0.1"
-  sha256 "2b7163d87408cedf73250f5590998deff5c6ee2e2b1480a933868e1c9c3a94fc"
+  version "0.4"
+  sha256 "defab1005a7e62e5b245ac9e57e0d5d0872264c99a5aea473cfea9757b8c4da0"
 
   url "https://github.com/swairshah/notchcom/releases/download/v#{version}/NotchCom-#{version}.dmg"
   name "NotchCom"
