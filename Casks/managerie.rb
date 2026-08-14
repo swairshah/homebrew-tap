@@ -1,6 +1,6 @@
 cask "managerie" do
-  version "2.0.0"
-  sha256 "8a117938fdcbe1f64cae2d882eb0ca855179487cd46eaf46979d9608553b97d0"
+  version "2.0.1"
+  sha256 "7c5394fc420d21e4514e6e9a2973e1f8b7a66d8f1019517fea3dfddc7954e746"
 
   url "https://github.com/swairshah/Managerie/releases/download/v#{version}/Managerie-#{version}.dmg"
   name "Managerie"
