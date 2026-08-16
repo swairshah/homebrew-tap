@@ -1,6 +1,6 @@
 cask "notchcom" do
-  version "0.5"
-  sha256 "73a711e9859e327f7bc0096a7779d325d1da1c73125dbdbcfa87f8dcfadf2600"
+  version "0.6"
+  sha256 "ae8a3b1fde8021a8a11d6d371f812f556855d05b6e19770d8fa0fdcd1f498045"
 
   url "https://github.com/swairshah/notchcom/releases/download/v#{version}/NotchCom-#{version}.dmg"
   name "NotchCom"
@@ -15,9 +15,7 @@ cask "notchcom" do
     system_command "/usr/bin/open", args: [staged_path.join("NotchCom.app")]
   end
 
-  zap trash: [
-    "~/Library/Preferences/com.swairshah.NotchCom.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.swairshah.NotchCom.plist"
 
   caveats <<~EOS
     NotchCom requires Microphone and Speech Recognition permissions for
