@@ -1,6 +1,6 @@
 cask "hearsay" do
-  version "1.0.27"
-  sha256 "99c6005ba69c0d2b629aaff8f04a58fa7705aa43e7dd5201ff1bcd30fbdfc951"
+  version "1.0.28"
+  sha256 "89bc79682692e52bd2994eda2349c49684cebcc3ce00d2ebc43de1beeb7fe471"
 
   url "https://github.com/swairshah/hearsay/releases/download/v#{version}/Hearsay-#{version}.dmg"
   name "Hearsay"
@@ -37,5 +37,7 @@ cask "hearsay" do
     Usage:
       • Hold Right Option (⌥) to record, release to transcribe
       • Toggle mode: Right Option + Space to start, Space/Escape to stop
+      • Record Meeting (menu bar) transcribes calls; recording call audio
+        needs macOS 14.2+ and asks for permission on first use
   EOS
 end
